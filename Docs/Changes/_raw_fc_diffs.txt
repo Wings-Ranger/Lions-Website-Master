@@ -1,0 +1,978 @@
+﻿Raw fc diffs
+
+==================== Home.html ====================
+
+Comparing files C:\USERS\200091068\SOURCE\REPOS\LIONS V4\Home.html and C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\HOME.HTML
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\Home.html
+    4:    <meta charset="utf-8" />
+    5:    <title>Harcourt  Lions Australia</title>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\HOME.HTML
+    4:    <meta charset="utf-8" />
+    5:    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    6:    <title>Harcourt  Lions Australia</title>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\Home.html
+    9:  <body>
+   10:    <nav>
+   11:    <ul class="sidebar" role="dialog" aria-modal="true" aria-label="Site menu">
+   12:    <li class="close-btn" onclick="hideSidebar()"><a href="#">Èú‗</a></li>
+   13:    <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   14:    <li class=""><a href="Home.html">Home</a></li>
+   15:    <li class=""><a href="membership.html">Membership</a></li>
+   16:    <li class=""><a href="meetings.html">Meetings</a></li>
+   17:    <li class="" ><a href="about-us.html">About Us</a></li>
+   18:    <li class=""><a href="contact-us.html">Contact Us</a></li>
+   19:    <li class=""><a href="sitemap.html">Site Map</a></li>
+   20:    </ul>
+   21:    <ul>
+   22:    <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   23:    <li class="hideonmobile"><a href="Home.html">Home</a></li>
+   24:    <li class="hideonmobile"><a href="membership.html">Membership</a></li>
+   25:    <li class="hideonmobile"><a href="meetings.html">Meetings</a></li>
+   26:    <li class="hideonmobile"><a href="about-us.html">About Us</a></li>
+   27:  <li class="hideonmobile"><a href="contact-us.html">Contact Us</a></li>
+   28:  <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   29:    <li class="menu-button" onclick="showSidebar()"><a href="#">È ª</a></li>
+   30:    </ul>
+   31:    </nav>
+   32:    <div class="backdrop" onclick="hideSidebar()" aria-hidden="true"></div>
+   33:    <section class="billboard editable">
+   34:    <img class="lionsbill" src="images/lions-billboard.jpg" alt="Lionsclub.org" title="Lions Club"/>
+   35:    </section>
+   36:    <script>
+   37:    function showSidebar(){
+   38:      document.body.classList.add("sidebar-open");
+   39:    }
+   40:    function hideSidebar(){
+   41:      document.body.classList.remove("sidebar-open");
+   42:    }
+   43:    // Accessibility: close sidebar with Escape and Backspace keys
+   44:      document.addEventListener('keydown', function(event) {
+   45:        if (event.key === "Escape" || event.key === "Backspace") {
+   46:          hideSidebar();
+   47:        }
+   48:      });
+   49:          // Accessibility: open sidebar with Enter key
+   50:          document.addEventListener('keydown', function(event) {
+   51:            if(window.innerWidth <= 1024){
+   52:        if (event.key === "Enter")  {
+   53:          showSidebar();
+   54:        }
+   55:      }
+   56:      });
+   57:    </script>
+   58:  </body>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\HOME.HTML
+   10:  <body>
+   11:    <nav aria-label="Primary">
+   12:      <ul class="sidebar" id="mobile-sidebar" aria-label="Mobile menu">
+   13:        <li class="close-btn">
+   14:          <button type="button" class="icon-button close-sidebar" aria-label="Close menu">Èú‗</button>
+   15:        </li>
+   16:        <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   17:        <li><a href="Home.html">Home</a></li>
+   18:        <li><a href="membership.html">Membership</a></li>
+   19:        <li><a href="meetings.html">Meetings</a></li>
+   20:        <li><a href="about-us.html">About Us</a></li>
+   21:        <li><a href="contact-us.html">Contact Us</a></li>
+   22:        <li><a href="sitemap.html">Site Map</a></li>
+   23:      </ul>
+   24:      <ul class="top-nav" aria-label="Desktop menu">
+   25:        <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   26:        <li class="hideonmobile"><a href="Home.html">Home</a></li>
+   27:        <li class="hideonmobile"><a href="membership.html">Membership</a></li>
+   28:        <li class="hideonmobile"><a href="meetings.html">Meetings</a></li>
+   29:        <li class="hideonmobile"><a href="about-us.html">About Us</a></li>
+   30:        <li class="hideonmobile"><a href="contact-us.html">Contact Us</a></li>
+   31:        <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   32:        <li class="menu-button">
+   33:          <button type="button" class="icon-button open-sidebar" aria-label="Open menu">È ª</button>
+   34:        </li>
+   35:      </ul>
+   36:    </nav>
+   37:    <div class="backdrop" id="nav-backdrop" aria-hidden="true"></div>
+   38:  
+   39:    <main class="editable">
+   40:      <h1>Harcourt Lions Australia</h1>
+   41:      <section class="billboard">
+   42:        <img class="lionsbill" src="images/lions-billboard.jpg" alt="Harcourt Lions community billboard" title="Lions Club" />
+   43:      </section>
+   44:    </main>
+   45:  
+   46:    <script src="site.js" defer></script>
+   47:  </body>
+*****
+
+
+==================== about-us.html ====================
+
+Comparing files C:\USERS\200091068\SOURCE\REPOS\LIONS V4\about-us.html and C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\ABOUT-US.HTML
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\about-us.html
+    1:  <!DOCTYPE html>
+    2:  
+    3:  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\ABOUT-US.HTML
+    1:  <!DOCTYPE html>
+    2:  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\about-us.html
+    5:      <meta charset="utf-8" />
+    6:      <title>About Us</title>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\ABOUT-US.HTML
+    4:      <meta charset="utf-8" />
+    5:      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    6:      <title>About Us</title>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\about-us.html
+    8:      <link rel="stylesheet" href="images.css" />
+    9:  
+   10:  </head>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\ABOUT-US.HTML
+    8:      <link rel="stylesheet" href="images.css" />
+    9:  </head>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\about-us.html
+   11:  <body>
+   12:      <nav>
+   13:          <ul class="sidebar">
+   14:              <li class="close-btn" onclick="hideSidebar()"><a href="#">Èú‗</a></li>
+   15:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   16:              <li class=""><a href="Home.html">Home</a></li>
+   17:              <li class=""><a href="membership.html">Membership</a></li>
+   18:              <li class=""><a href="meetings.html">Meetings</a></li>
+   19:              <li class="" ><a href="about-us.html">About Us</a></li>
+   20:              <li class=""><a href="contact-us.html">Contact Us</a></li>
+   21:              <li class=""><a href="sitemap.html">Site Map</a></li>
+   22:          </ul>
+   23:          <ul>
+   24:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   25:              <li class="hideonmobile"><a href="Home.html">Home</a></li>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\ABOUT-US.HTML
+   10:  <body>
+   11:      <nav aria-label="Primary">
+   12:          <ul class="sidebar" id="mobile-sidebar" aria-label="Mobile menu">
+   13:              <li class="close-btn">
+   14:                  <button type="button" class="icon-button close-sidebar" aria-label="Close menu">Èú‗</button>
+   15:              </li>
+   16:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   17:              <li><a href="Home.html">Home</a></li>
+   18:              <li><a href="membership.html">Membership</a></li>
+   19:              <li><a href="meetings.html">Meetings</a></li>
+   20:              <li><a href="about-us.html">About Us</a></li>
+   21:              <li><a href="contact-us.html">Contact Us</a></li>
+   22:              <li><a href="sitemap.html">Site Map</a></li>
+   23:          </ul>
+   24:          <ul class="top-nav" aria-label="Desktop menu">
+   25:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   26:              <li class="hideonmobile"><a href="Home.html">Home</a></li>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\about-us.html
+   30:              <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   31:              <li class="menu-button" onclick="showSidebar()"><a href="#">È ª</a></li>
+   32:          </ul>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\ABOUT-US.HTML
+   31:              <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   32:              <li class="menu-button">
+   33:                  <button type="button" class="icon-button open-sidebar" aria-label="Open menu">È ª</button>
+   34:              </li>
+   35:          </ul>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\about-us.html
+   33:      </nav>
+   34:      <div class="backdrop" onclick="hideSidebar()" aria-hidden="true"></div>
+   35:    <script>
+   36:    function showSidebar(){
+   37:      document.body.classList.add("sidebar-open");
+   38:    }
+   39:    function hideSidebar(){
+   40:      document.body.classList.remove("sidebar-open");
+   41:    }
+   42:    // Accessibility: close sidebar with Escape and Backspace keys
+   43:      document.addEventListener('keydown', function(event) {
+   44:        if (event.key === "Escape" || event.key === "Backspace") {
+   45:          hideSidebar();
+   46:        }
+   47:      });
+   48:          // Accessibility: open sidebar with Enter key
+   49:          document.addEventListener('keydown', function(event) {
+   50:            if (window.innerWidth <= 1024)  {
+   51:        if (event.key === "Enter" ) {
+   52:          showSidebar();
+   53:        }
+   54:      }
+   55:    });
+   56:    </script>
+   57:  </body>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\ABOUT-US.HTML
+   36:      </nav>
+   37:      <div class="backdrop" id="nav-backdrop" aria-hidden="true"></div>
+   38:  
+   39:      <main class="editable">
+   40:          <h1>About Harcourt Lions</h1>
+   41:          <p>Harcourt Lions members work together to support local causes through practical service, fundraising, and community e
+   42:  vents.</p>
+   43:          <p>Our club welcomes people who value teamwork, respect, and making a positive local impact through ongoing volunteer e
+   44:  fforts.</p>
+   45:      </main>
+   46:  
+   47:      <script src="site.js" defer></script>
+   48:  </body>
+*****
+
+
+==================== contact-us.html ====================
+
+Comparing files C:\USERS\200091068\SOURCE\REPOS\LIONS V4\contact-us.html and C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\CONTACT-US.HTML
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\contact-us.html
+    1:  <!DOCTYPE html>
+    2:  
+    3:  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\CONTACT-US.HTML
+    1:  <!DOCTYPE html>
+    2:  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\contact-us.html
+    5:      <meta charset="utf-8" />
+    6:      <title>Contact Us</title>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\CONTACT-US.HTML
+    4:      <meta charset="utf-8" />
+    5:      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    6:      <title>Contact Us</title>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\contact-us.html
+    8:      <link rel="stylesheet" href="images.css" />
+    9:  
+   10:  </head>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\CONTACT-US.HTML
+    8:      <link rel="stylesheet" href="images.css" />
+    9:  </head>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\contact-us.html
+   11:  <body>
+   12:      <nav>
+   13:          <ul class="sidebar">
+   14:              <li class="close-btn" onclick="hideSidebar()"><a href="#">Èú‗</a></li>
+   15:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   16:              <li class=""><a href="Home.html">Home</a></li>
+   17:              <li class=""><a href="membership.html">Membership</a></li>
+   18:              <li class=""><a href="meetings.html">Meetings</a></li>
+   19:              <li class="" ><a href="about-us.html">About Us</a></li>
+   20:              <li class=""><a href="contact-us.html">Contact Us</a></li>
+   21:              <li class=""><a href="sitemap.html">Site Map</a></li>
+   22:          </ul>
+   23:          <ul>
+   24:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   25:              <li class="hideonmobile"><a href="Home.html">Home</a></li>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\CONTACT-US.HTML
+   10:  <body>
+   11:      <nav aria-label="Primary">
+   12:          <ul class="sidebar" id="mobile-sidebar" aria-label="Mobile menu">
+   13:              <li class="close-btn">
+   14:                  <button type="button" class="icon-button close-sidebar" aria-label="Close menu">Èú‗</button>
+   15:              </li>
+   16:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   17:              <li><a href="Home.html">Home</a></li>
+   18:              <li><a href="membership.html">Membership</a></li>
+   19:              <li><a href="meetings.html">Meetings</a></li>
+   20:              <li><a href="about-us.html">About Us</a></li>
+   21:              <li><a href="contact-us.html">Contact Us</a></li>
+   22:              <li><a href="sitemap.html">Site Map</a></li>
+   23:          </ul>
+   24:          <ul class="top-nav" aria-label="Desktop menu">
+   25:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   26:              <li class="hideonmobile"><a href="Home.html">Home</a></li>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\contact-us.html
+   30:              <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   31:              <li class="menu-button" onclick="showSidebar()"><a href="#">È ª</a></li>
+   32:          </ul>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\CONTACT-US.HTML
+   31:              <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   32:              <li class="menu-button">
+   33:                  <button type="button" class="icon-button open-sidebar" aria-label="Open menu">È ª</button>
+   34:              </li>
+   35:          </ul>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\contact-us.html
+   33:      </nav>
+   34:      <div class="backdrop" onclick="hideSidebar()" aria-hidden="true"></div>
+   35:      <main class="editable">
+   36:        <form>
+   37:        <h1>Contact Us</h1>
+   38:        <p>If you have any questions, comments, or would like to get involved with the Harcourt Lions Club, please feel free to r
+   39:  each out to us through the following contact information:</p>
+   40:          <li> <a href="mailto:200091068@students.bendigotafe.edu.au"><strong>Email Us</strong></a></li> <br>
+   41:          <li><strong>Phone:</strong> (123) 456-7890</li> <br>
+   42:          <li><strong>Address:</strong> 123 Main Street, Harcourt, VIC 3453</li> <br>
+   43:          <p>We look forward to hearing from you and welcoming you to our community service efforts!</p>
+   44:        </form><br>
+   45:          <h4>Feedback Form</h4>
+   46:          <form action="mailto:200091068@students.bendigotafe.edu.au" method="post" enctype="text/plain">
+   47:    <label for="events">Event Feedback, how was the event?</label><br>
+   48:        <select name="events" id="events">
+   49:          <option value="good">The event was good</option>
+   50:          <option value="medium">The event was decent</option>
+   51:          <option value="bad">The Event was bad</option>
+   52:          </select>
+   53:          <p>What was the date of the event?</p>
+   54:          <input type="date" id="event-date" name="event-date">
+   55:          <p>Would you like to attend future events?</p>
+   56:        <input type="checkbox" id="attend-events" name="attend-events">
+   57:        <label for="attend-events">Yes, I would like to attend future events.</label> <br>
+   58:        <input type="checkbox" id="no" name="no">
+   59:          <label for="no">No, I would not like to attend future events.</label><br>
+   60:          <input type="submit" value="Submit Feedback">
+   61:        </form>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\CONTACT-US.HTML
+   36:      </nav>
+   37:      <div class="backdrop" id="nav-backdrop" aria-hidden="true"></div>
+   38:  
+   39:      <main class="editable">
+   40:        <h1>Contact Us</h1>
+   41:        <p>If you have any questions, comments, or would like to get involved with the Harcourt Lions Club, please use the contac
+   42:  t details below.</p>
+   43:  
+   44:        <address>
+   45:          <p><strong>Email:</strong> <a href="mailto:200091068@students.bendigotafe.edu.au">200091068@students.bendigotafe.edu.au
+   46:  </a></p>
+   47:          <p><strong>Phone:</strong> (123) 456-7890</p>
+   48:          <p><strong>Address:</strong> 123 Main Street, Harcourt, VIC 3453</p>
+   49:        </address>
+   50:  
+   51:        <p>We look forward to hearing from you and welcoming you to our community service efforts.</p>
+   52:  
+   53:        <h2>Feedback Form</h2>
+   54:        <form>
+   55:          <label for="events">Event Feedback: how was the event?</label><br />
+   56:          <select name="events" id="events">
+   57:            <option value="good">The event was good</option>
+   58:            <option value="medium">The event was decent</option>
+   59:            <option value="bad">The event was bad</option>
+   60:          </select>
+   61:  
+   62:          <p><label for="event-date">What was the date of the event?</label></p>
+   63:          <input type="date" id="event-date" name="event-date" />
+   64:  
+   65:          <fieldset>
+   66:            <legend>Would you like to attend future events?</legend>
+   67:            <label><input type="radio" id="attend-yes" name="attend-events" value="yes" /> Yes, I would like to attend future eve
+   68:  nts.</label><br />
+   69:            <label><input type="radio" id="attend-no" name="attend-events" value="no" /> No, I would not like to attend future ev
+   70:  ents.</label>
+   71:          </fieldset>
+   72:  
+   73:          <input type="submit" value="Submit Feedback" />
+   74:        </form>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\contact-us.html
+   62:      </main>
+   63:  <script>
+   64:    function showSidebar(){
+   65:      document.body.classList.add("sidebar-open");
+   66:    }
+   67:    function hideSidebar(){
+   68:      document.body.classList.remove("sidebar-open");
+   69:    }
+   70:    // Accessibility: close sidebar with Escape and Backspace keys
+   71:      document.addEventListener('keydown', function(event) {
+   72:        if (event.key === "Escape" || event.key === "Backspace") {
+   73:          hideSidebar();
+   74:        }
+   75:      });
+   76:          // Accessibility: open sidebar with Enter key
+   77:          document.addEventListener('keydown', function(event) {
+   78:            if (window.innerWidth <= 1024)  {
+   79:        if (event.key === "Enter" ) {
+   80:          showSidebar();
+   81:        }
+   82:      }
+   83:      });
+   84:    </script>
+   85:  </body>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\CONTACT-US.HTML
+   75:      </main>
+   76:  
+   77:      <script src="site.js" defer></script>
+   78:  </body>
+*****
+
+
+==================== meetings.html ====================
+
+Comparing files C:\USERS\200091068\SOURCE\REPOS\LIONS V4\meetings.html and C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEETINGS.HTML
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\meetings.html
+    1:  <!DOCTYPE html>
+    2:  
+    3:  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEETINGS.HTML
+    1:  <!DOCTYPE html>
+    2:  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\meetings.html
+    5:      <meta charset="utf-8" />
+    6:      <title>Meetings</title>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEETINGS.HTML
+    4:      <meta charset="utf-8" />
+    5:    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    6:      <title>Meetings</title>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\meetings.html
+   10:  <body>
+   11:      <nav>
+   12:          <ul class="sidebar">
+   13:              <li class="close-btn" onclick="hideSidebar()"><a href="#">Èú‗</a></li>
+   14:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   15:              <li class=""><a href="Home.html">Home</a></li>
+   16:              <li class=""><a href="membership.html">Membership</a></li>
+   17:              <li class=""><a href="meetings.html">Meetings</a></li>
+   18:              <li class="" ><a href="about-us.html">About Us</a></li>
+   19:              <li class=""><a href="contact-us.html">Contact Us</a></li>
+   20:              <li class=""><a href="sitemap.html">Site Map</a></li>
+   21:          </ul>
+   22:          <div class="backdrop" onclick ="hideSidebar()" aria-hidden="true"></div>
+   23:          <ul>
+   24:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   25:              <li class="hideonmobile"><a href="Home.html">Home</a></li>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEETINGS.HTML
+   10:  <body>
+   11:    <nav aria-label="Primary">
+   12:      <ul class="sidebar" id="mobile-sidebar" aria-label="Mobile menu">
+   13:        <li class="close-btn">
+   14:          <button type="button" class="icon-button close-sidebar" aria-label="Close menu">Èú‗</button>
+   15:        </li>
+   16:        <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   17:        <li><a href="Home.html">Home</a></li>
+   18:        <li><a href="membership.html">Membership</a></li>
+   19:        <li><a href="meetings.html">Meetings</a></li>
+   20:        <li><a href="about-us.html">About Us</a></li>
+   21:        <li><a href="contact-us.html">Contact Us</a></li>
+   22:        <li><a href="sitemap.html">Site Map</a></li>
+   23:          </ul>
+   24:      <ul class="top-nav" aria-label="Desktop menu">
+   25:        <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   26:              <li class="hideonmobile"><a href="Home.html">Home</a></li>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\meetings.html
+   30:              <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   31:              <li class="menu-button" onclick="showSidebar()"><a href="#">È ª</a></li>
+   32:          </ul>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEETINGS.HTML
+   31:              <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   32:        <li class="menu-button">
+   33:          <button type="button" class="icon-button open-sidebar" aria-label="Open menu">È ª</button>
+   34:        </li>
+   35:          </ul>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\meetings.html
+   33:      </nav>
+   34:      <div class="editable">
+   35:      <table>
+   36:          <tr>
+   37:              <th>Day</th>
+   38:              <th>Time</th>
+   39:              <th>Location</th>
+   40:          </tr>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEETINGS.HTML
+   36:      </nav>
+   37:    <div class="backdrop" id="nav-backdrop" aria-hidden="true"></div>
+   38:  
+   39:    <main class="editable">
+   40:      <h1>Meetings</h1>
+   41:      <table>
+   42:        <caption>Weekly meeting schedule</caption>
+   43:        <thead>
+   44:          <tr>
+   45:            <th scope="col">Day</th>
+   46:            <th scope="col">Time</th>
+   47:            <th scope="col">Location</th>
+   48:          </tr>
+   49:        </thead>
+   50:        <tbody>
+   51:          <tr>
+   52:            <td>Monday</td>
+   53:            <td>7:00 PM - 9:00 PM</td>
+   54:            <td>VMR</td>
+   55:          </tr>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\meetings.html
+   41:          <tr>
+   42:              <td>Monday</td>
+   43:              <td>7:00 PM - 9:00 PM</td>
+   44:              <td>VMR</td>
+   45:          </tr>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEETINGS.HTML
+   56:          <tr>
+   57:            <td>Wednesday</td>
+   58:            <td>6:30 PM - 8:30 PM</td>
+   59:            <td>VMR</td>
+   60:          </tr>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\meetings.html
+   46:          <tr>
+   47:              <td>Wednesday</td>
+   48:              <td>6:30 PM - 8:30 PM</td>
+   49:              <td>VMR</td>
+   50:          </tr>
+   51:          <tr>
+   52:              <td>Friday</td>
+   53:              <td>5:00 PM - 7:00 PM</td>
+   54:              <td>VMR</td>
+   55:          </tr>
+   56:      </table>
+   57:      </div>
+   58:  
+   59:  
+   60:      <script>
+   61:    function showSidebar(){
+   62:      document.body.classList.add("sidebar-open");
+   63:    }
+   64:    function hideSidebar(){
+   65:      document.body.classList.remove("sidebar-open");
+   66:    }
+   67:    // Accessibility: close sidebar with Escape and Backspace keys
+   68:      document.addEventListener('keydown', function(event) {
+   69:        if (event.key === "Escape" || event.key === "Backspace") {
+   70:          hideSidebar();
+   71:        }
+   72:      });
+   73:            // Accessibility: open sidebar with Enter key
+   74:          document.addEventListener('keydown', function(event) {
+   75:            if (window.innerWidth <= 1024)  {
+   76:        if (event.key === "Enter" ) {
+   77:          showSidebar();
+   78:        }
+   79:      }
+   80:    });
+   81:    </script>
+   82:  </body>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEETINGS.HTML
+   61:          <tr>
+   62:            <td>Friday</td>
+   63:            <td>5:00 PM - 7:00 PM</td>
+   64:            <td>VMR</td>
+   65:          </tr>
+   66:        </tbody>
+   67:      </table>
+   68:    </main>
+   69:  
+   70:    <script src="site.js" defer></script>
+   71:  </body>
+*****
+
+
+==================== membership.html ====================
+
+Comparing files C:\USERS\200091068\SOURCE\REPOS\LIONS V4\membership.html and C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEMBERSHIP.HTML
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\membership.html
+    1:  <!DOCTYPE html>
+    2:  
+    3:  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEMBERSHIP.HTML
+    1:  <!DOCTYPE html>
+    2:  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\membership.html
+    5:      <meta charset="utf-8" />
+    6:      <title>Membership</title>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEMBERSHIP.HTML
+    4:      <meta charset="utf-8" />
+    5:      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    6:      <title>Membership</title>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\membership.html
+   10:  <body>
+   11:      <nav>
+   12:          <ul class="sidebar">
+   13:              <li class="close-btn" onclick="hideSidebar()"><a href="#">Èú‗</a></li>
+   14:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   15:              <li class=""><a href="Home.html">Home</a></li>
+   16:              <li class=""><a href="membership.html">Membership</a></li>
+   17:              <li class=""><a href="meetings.html">Meetings</a></li>
+   18:              <li class="" ><a href="about-us.html">About Us</a></li>
+   19:              <li class=""><a href="contact-us.html">Contact Us</a></li>
+   20:              <li class=""><a href="sitemap.html">Site Map</a></li>
+   21:          </ul>
+   22:          <ul>
+   23:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   24:              <li class="hideonmobile"><a href="Home.html">Home</a></li>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEMBERSHIP.HTML
+   10:  <body>
+   11:      <nav aria-label="Primary">
+   12:          <ul class="sidebar" id="mobile-sidebar" aria-label="Mobile menu">
+   13:              <li class="close-btn">
+   14:                  <button type="button" class="icon-button close-sidebar" aria-label="Close menu">Èú‗</button>
+   15:              </li>
+   16:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   17:              <li><a href="Home.html">Home</a></li>
+   18:              <li><a href="membership.html">Membership</a></li>
+   19:              <li><a href="meetings.html">Meetings</a></li>
+   20:              <li><a href="about-us.html">About Us</a></li>
+   21:              <li><a href="contact-us.html">Contact Us</a></li>
+   22:              <li><a href="sitemap.html">Site Map</a></li>
+   23:          </ul>
+   24:          <ul class="top-nav" aria-label="Desktop menu">
+   25:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   26:              <li class="hideonmobile"><a href="Home.html">Home</a></li>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\membership.html
+   29:              <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   30:              <li class="menu-button" onclick="showSidebar()"><a href="#">È ª</a></li>
+   31:          </ul>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEMBERSHIP.HTML
+   31:              <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   32:              <li class="menu-button">
+   33:                  <button type="button" class="icon-button open-sidebar" aria-label="Open menu">È ª</button>
+   34:              </li>
+   35:          </ul>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\membership.html
+   32:      </nav>
+   33:      <div class="backdrop" onclick="hideSidebar()" aria-hidden="true"></div>
+   34:      <h3>Membership Requirements</h3>
+   35:      <ul class="bulletlist">
+   36:          <li>Membership is open to all people of good character who are at least 18 years of age.</li>
+   37:          <li>Members must be committed to the Lions Club's mission of serving their communities and making a positive impact on 
+   38:  the world.</li>
+   39:          <li>Members are expected to actively participate in club activities, attend meetings, and contribute to service project
+   40:  s.</li>
+   41:          <li>Membership dues must be paid annually to support the club's operations and charitable initiatives.</li>
+   42:          <li>Members should uphold the values of integrity, respect, and compassion in all interactions within the club and with
+   43:   the community.</li>
+   44:          <li>To become a member, individuals can express their interest to a current member or contact the club directly through
+   45:   their website or local chapter.</li>
+   46:          <li>Prospective members may be invited to attend meetings or participate in service projects to learn more about the cl
+   47:  ub's activities and values.</li>
+   48:          <li>Membership applications may require sponsorship from a current member and approval from the club's membership commi
+   49:  ttee.</li>
+   50:          <li>Once accepted, new members will be welcomed into the club and encouraged to get involved in various service project
+   51:  s and initiatives.</li>
+   52:      </ul>
+   53:      <h3>Steps to Become a Member</h3>
+   54:      <ol>
+   55:          <li>Express interest to a current member or contact the club directly.</li>
+   56:          <li>Attend a meeting or service project to learn more about the club.</li>
+   57:          <li>Submit a membership application with the required sponsorship.</li>
+   58:          <li>Wait for approval from the club's membership committee.</li>
+   59:          <li>Once accepted, participate in orientation and begin contributing to service projects.</li>
+   60:      </ol>
+   61:      </div>
+   62:  
+   63:    <script>
+   64:    function showSidebar(){
+   65:      document.body.classList.add("sidebar-open");
+   66:    }
+   67:    function hideSidebar(){
+   68:      document.body.classList.remove("sidebar-open");
+   69:    }
+   70:    // Accessibility: close sidebar with Escape and Backspace keys
+   71:      document.addEventListener('keydown', function(event) {
+   72:        if (event.key === "Escape" || event.key === "Backspace") {
+   73:          hideSidebar();
+   74:        }
+   75:      });
+   76:      // Accessibility: open sidebar with Enter key
+   77:          document.addEventListener('keydown', function(event) {
+   78:            if (window.innerWidth <= 1024) 
+   79:        if (event.key === "Enter" ) {
+   80:          showSidebar();
+   81:        }
+   82:      });
+   83:    </script>
+   84:  </body>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEMBERSHIP.HTML
+   36:      </nav>
+   37:      <div class="backdrop" id="nav-backdrop" aria-hidden="true"></div>
+   38:  
+   39:      <main class="editable">
+   40:          <h1>Membership</h1>
+   41:          <h2>Membership Requirements</h2>
+   42:          <ul class="bulletlist">
+   43:              <li>Membership is open to all people of good character who are at least 18 years of age.</li>
+   44:              <li>Members must be committed to the Lions Club mission of serving communities and making a positive impact.</li>
+   45:              <li>Members are expected to actively participate in club activities, attend meetings, and contribute to service pro
+   46:  jects.</li>
+   47:              <li>Membership dues must be paid annually to support operations and charitable initiatives.</li>
+   48:              <li>Members should uphold integrity, respect, and compassion in all club and community interactions.</li>
+   49:              <li>To become a member, express your interest to a current member or contact the club directly.</li>
+   50:              <li>Prospective members may be invited to attend meetings or service projects to learn about club activities and va
+   51:  lues.</li>
+   52:              <li>Membership applications may require sponsorship from a current member and committee approval.</li>
+   53:              <li>Once accepted, new members are welcomed and encouraged to join service projects and initiatives.</li>
+   54:          </ul>
+   55:          <h2>Steps to Become a Member</h2>
+   56:          <ol>
+   57:              <li>Express interest to a current member or contact the club directly.</li>
+   58:              <li>Attend a meeting or service project to learn more about the club.</li>
+   59:              <li>Submit a membership application with the required sponsorship.</li>
+   60:              <li>Wait for approval from the membership committee.</li>
+   61:              <li>Once accepted, participate in orientation and begin contributing to service projects.</li>
+   62:          </ol>
+   63:      </main>
+   64:  
+   65:      <script src="site.js" defer></script>
+   66:  </body>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\membership.html
+   86:  </body>
+   87:  </html>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\MEMBERSHIP.HTML
+*****
+
+
+==================== sitemap.html ====================
+
+Comparing files C:\USERS\200091068\SOURCE\REPOS\LIONS V4\sitemap.html and C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\SITEMAP.HTML
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\sitemap.html
+    1:  <!DOCTYPE html>
+    2:  
+    3:  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\SITEMAP.HTML
+    1:  <!DOCTYPE html>
+    2:  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\sitemap.html
+    5:      <meta charset="utf-8" />
+    6:      <title>Sitemap</title>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\SITEMAP.HTML
+    4:      <meta charset="utf-8" />
+    5:      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    6:      <title>Sitemap</title>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\sitemap.html
+   10:  <body>
+   11:      <nav>
+   12:          <ul class="sidebar">
+   13:              <li class="close-btn" onclick="hideSidebar()"><a href="#">Èú‗</a></li>
+   14:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   15:              <li class=""><a href="Home.html">Home</a></li>
+   16:              <li class=""><a href="membership.html">Membership</a></li>
+   17:              <li class=""><a href="meetings.html">Meetings</a></li>
+   18:              <li class="" ><a href="about-us.html">About Us</a></li>
+   19:              <li class=""><a href="contact-us.html">Contact Us</a></li>
+   20:              <li class=""><a href="sitemap.html">Site Map</a></li>
+   21:  
+   22:          </ul>
+   23:          <ul>
+   24:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+   25:              <li class="hideonmobile"><a href="Home.html">Home</a></li>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\SITEMAP.HTML
+   10:  <body>
+   11:      <nav aria-label="Primary">
+   12:          <ul class="sidebar" id="mobile-sidebar" aria-label="Mobile menu">
+   13:              <li class="close-btn">
+   14:                  <button type="button" class="icon-button close-sidebar" aria-label="Close menu">Èú‗</button>
+   15:              </li>
+   16:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   17:              <li><a href="Home.html">Home</a></li>
+   18:              <li><a href="membership.html">Membership</a></li>
+   19:              <li><a href="meetings.html">Meetings</a></li>
+   20:              <li><a href="about-us.html">About Us</a></li>
+   21:              <li><a href="contact-us.html">Contact Us</a></li>
+   22:              <li><a href="sitemap.html">Site Map</a></li>
+   23:          </ul>
+   24:          <ul class="top-nav" aria-label="Desktop menu">
+   25:              <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50" /></li>
+   26:              <li class="hideonmobile"><a href="Home.html">Home</a></li>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\sitemap.html
+   30:              <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   31:              <li class="menu-button" onclick="showSidebar()"><a href="#">È ª</a></li>
+   32:          </ul>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\SITEMAP.HTML
+   31:              <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>
+   32:              <li class="menu-button">
+   33:                  <button type="button" class="icon-button open-sidebar" aria-label="Open menu">È ª</button>
+   34:              </li>
+   35:          </ul>
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\sitemap.html
+   33:      </nav>
+   34:      <div class="backdrop" onclick="hideSidebar()" aria-hidden="true"></div>
+   35:      <div class="editable">
+   36:      <img src="images/sitemap.png" alt="Sitemap" title="Sitemap" class="sitemap" >
+   37:      </div>
+   38:  
+   39:  
+   40:      <script>
+   41:    function showSidebar(){
+   42:      document.body.classList.add("sidebar-open");
+   43:    }
+   44:    function hideSidebar(){
+   45:      document.body.classList.remove("sidebar-open");
+   46:    }
+   47:    // Accessibility: close sidebar with Escape and Backspace keys
+   48:      document.addEventListener('keydown', function(event) {
+   49:        if (event.key === "Escape" || event.key === "Backspace") {
+   50:          hideSidebar();
+   51:        }
+   52:      });
+   53:          // Accessibility: open sidebar with Enter key
+   54:          document.addEventListener('keydown', function(event) {
+   55:            if (window.innerWidth <= 1024)  {
+   56:        if (event.key === "Enter" ) {
+   57:          showSidebar();
+   58:        }
+   59:      }
+   60:          });
+   61:    </script>
+   62:  </body>
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\SITEMAP.HTML
+   36:      </nav>
+   37:      <div class="backdrop" id="nav-backdrop" aria-hidden="true"></div>
+   38:  
+   39:      <main class="editable">
+   40:          <h1>Site Map</h1>
+   41:          <img src="images/sitemap.png" alt="Site map showing page structure" title="Sitemap" class="sitemap" />
+   42:      </main>
+   43:  
+   44:      <script src="site.js" defer></script>
+   45:  </body>
+*****
+
+
+==================== style.css ====================
+
+Comparing files C:\USERS\200091068\SOURCE\REPOS\LIONS V4\style.css and C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\STYLE.CSS
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\style.css
+   11:  min-height: 100vh;
+   12:  transition: padding-right 0.25s ease, overflow 0.25s ease;
+   13:  padding-top:64px;
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\STYLE.CSS
+   11:  min-height: 100vh;
+   12:  transition: overflow 0.25s ease;
+   13:  padding-top:64px;
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\style.css
+   15:  body.sidebar-open {
+   16:   padding-right: 250px; /* Adjust this value based on the width of your sidebar */
+   17:   overflow: hidden; /* Prevent scrolling when the sidebar is open */
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\STYLE.CSS
+   15:  body.sidebar-open {
+   16:   overflow: hidden; /* Prevent scrolling when the sidebar is open */
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\style.css
+   67:  }
+   68:  /*Cursor hover*/
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\STYLE.CSS
+   66:  }
+   67:  .icon-button {
+   68:   border: 0;
+   69:   background: transparent;
+   70:   cursor: pointer;
+   71:   color: inherit;
+   72:   font-size: 30px;
+   73:   line-height: 1;
+   74:  }
+   75:  
+   76:  .icon-button:focus-visible,
+   77:  nav a:focus-visible {
+   78:   outline: 3px solid #d2ac12;
+   79:   outline-offset: 3px;
+   80:  }
+   81:  /*Cursor hover*/
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\style.css
+  110:   padding:20px;
+  111:   height:50px;
+  112:  }
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\STYLE.CSS
+  123:   padding:20px;
+  124:   height:auto;
+  125:  }
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\style.css
+  149:  {display:none;}
+  150:  /* Responsive Design (determines phone or laptop use) */
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\STYLE.CSS
+  162:  {display:none;}
+  163:  
+  164:  .menu-button .icon-button {
+  165:   font-size: 32px;
+  166:   padding: 6px;
+  167:  }
+  168:  /* Responsive Design (determines phone or laptop use) */
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\style.css
+  187:   transition: opacity .25s ease;
+  188:  }
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\STYLE.CSS
+  205:   transition: opacity .25s ease;
+  206:   background-color: rgba(0, 0, 0, 0.35);
+  207:  }
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\style.css
+  213:  }
+  214:  th, td {
+  215:   border: 1px solid #ddd;
+  216:   padding: 8px;
+  217:   text-align: left;
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\STYLE.CSS
+  232:  }
+  233:  caption {
+  234:   font-weight: bold;
+  235:   margin-bottom: 8px;
+  236:   text-align: left;
+*****
+
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\style.css
+  218:  }
+  219:  th {
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\STYLE.CSS
+  237:  }
+  238:  th, td {
+  239:   border: 1px solid #ddd;
+  240:   padding: 8px;
+  241:   text-align: left;
+  242:  }
+  243:  th {
+*****
+
+
+==================== images.css ====================
+
+Comparing files C:\USERS\200091068\SOURCE\REPOS\LIONS V4\images.css and C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\IMAGES.CSS
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V4\images.css
+    3:  /* Basic image styles */
+    4:  img {
+    5:      max-width: 100%;
+***** C:\USERS\200091068\SOURCE\REPOS\LIONS V5 AI\IMAGES.CSS
+    3:  /* Basic image styles */
+    4:  main img,
+    5:  nav img,
+    6:  .billboard img {
+    7:      max-width: 100%;
+*****
+

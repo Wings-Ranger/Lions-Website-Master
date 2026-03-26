@@ -1,0 +1,272 @@
+/* Global reset and base page layout */
+/* V5.1: Brand tokens — edit once here to change throughout the whole site. */
+:root {
+  --accent: #d2ac12;       /* Gold brand colour */
+  --nav-height: 64px;      /* Fixed nav bar height */
+}
+
+*{
+margin:0;
+padding:0;
+}
+/* AI V4->V5 change start: sidebar stability, accessible button states, mobile overlay polish, and table caption support. Change log: Changes/changesV1.md lines 191-216; Changes/changesV2.md lines 146-158. */
+body{
+/*background-image: url("images/lions-logo.jpg");*/
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+min-height: 100vh;
+transition: overflow 0.25s ease;
+padding-top: var(--nav-height);
+}
+/* Lock page scrolling while the off-canvas menu is open. */
+body.sidebar-open {
+ overflow: hidden; /* Prevent scrolling when the sidebar is open */
+}
+.largertext{
+ font-size: larger;
+}
+/* Home page billboard image sizing. */
+.lionsbill{
+position:relative;
+display:block;
+width:100%;
+height:auto;
+object-fit:cover;
+
+max-width:1100px;
+margin:0 auto;
+}
+.billboard {
+  background: #f9f9f9;        /* subtle separation from nav */
+  padding: 32px 16px;         /* controls vertical breathing room */
+  border-bottom: 0.1px solid #e5e5e5;
+}
+
+/* Desktop navigation shell */
+nav{
+ background-color: rgb(255, 255, 255);
+ box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+ margin:auto;
+position:fixed;
+ top:0;
+ left:0;
+ right:0;
+ z-index: 1000;
+ height: var(--nav-height);
+}
+/* Horizontal nav list layout */
+nav ul{
+ width:100%;
+ list-style-type: none;
+ display: flex;
+ justify-content: flex-end;
+ padding: 10px 0;
+}
+/* Space between top-level navigation items */
+nav li{
+ margin-right: 30px;
+}
+/* Shared link styling for the navigation menus */
+nav a{
+ height:100%;
+ text-decoration: none;
+ color: black;
+ font-size: 16px;
+ font-weight: bold;
+}
+.icon-button {
+ border: 0;
+ background: transparent;
+ cursor: pointer;
+ color: inherit;
+ font-size: 30px;
+ line-height: 1;
+}
+
+.icon-button:focus-visible,
+nav a:focus-visible {
+ outline: 3px solid var(--accent);
+ outline-offset: 3px;
+}
+/* Hover and active link states */
+nav a:hover{
+ color: var(--accent);
+ text-decoration: underline;
+}
+nav a:active{
+  color: var(--accent);
+}
+/* Highlights the current page link set by site.js */
+nav a[aria-current="page"] {
+  color: var(--accent);
+  font-weight: bold;
+}
+/* Push the logo to the left edge of the nav bar. */
+nav li:first-child{
+ margin-right: auto;
+}
+/* Mobile sidebar menu */
+.sidebar{
+ position:fixed;
+ top: 0;
+ right: 0;
+ height: 100vh;
+ width: 250px;
+ z-index: 999;
+ background-color: #f0f0f0;
+ backdrop-filter: blur(10px);
+ box-shadow: -10px 0 10px rgba(0, 0, 0, 0.7);
+ /* Slide-in animation setup */
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: flex-start;
+ padding-top: 0;
+ transform: translateX(100%);
+ transition: transform 0.3s ease-in-out;
+ will-change: transform;
+ pointer-events: none; /* Prevent interaction when hidden */
+}
+body.sidebar-open .sidebar {
+ transform: translateX(0);
+ pointer-events: auto;
+ padding-right:0;
+}
+.sidebar li{
+ width: 100%;
+ margin-right:0;
+ padding:20px;
+ height:auto;
+}
+.sidebar li:first-child{
+ margin-right: 0px;
+ margin-top:0px;
+ top:0;
+}
+.sidebar li:nth-child(2){
+ margin-left:0px;
+ top:0px;
+}
+.sidebar a{
+ display: block;
+ width:100%;
+ padding: 15px 20px;
+ box-sizing: border-box;
+ font-size:18px;
+}
+.sidebar .close-btn{
+ position: absolute;
+ top: 15px;
+ right:25px;
+ left: auto;
+ margin-right: 0;
+ width:auto;
+}
+.sidebar .close-btn a{
+ padding: 0;
+ width: auto;
+ font-size: 30px;
+ display: inline;
+}
+.sidebar a:hover {
+ color:white;
+ background-color: var(--accent);
+ font-weight: bold;
+}
+.menu-button
+{display:none;}
+
+.menu-button .icon-button {
+ font-size: 32px;
+ padding: 6px;
+}
+/* Hide the hamburger while the sidebar is already open. */
+body.sidebar-open .menu-button {
+display:none; /* Hides the menu button when the sidebar is open */
+}
+/* Responsive: phones & tablets */
+@media (max-width: 800px) {
+  /* Switch to hamburger on small screens */
+  .hideonmobile {
+    display: none;
+  }
+  .menu-button {
+    display: block; /* Show the menu button on small screens */
+  }
+
+  /* Sidebar takes full width on small screens */
+  .sidebar {
+    width: 100%;
+  }
+
+  /* Avoid body shifting when sidebar opens on small screens */
+  body.sidebar-open {
+    padding-right: 0;
+  }
+}
+
+/* (Optional) If you want ultra-small tweaks below 400px, keep a separate block */
+@media (max-width: 400px) {
+  /* Add any extra tiny-screen adjustments here if needed */
+}
+
+/* Dark overlay behind the mobile sidebar. */
+.backdrop {
+ position: fixed;
+ inset: 0;
+ z-index: 900;
+ opacity: 0;
+ pointer-events: none;
+ transition: opacity .25s ease;
+ background-color: rgba(0, 0, 0, 0.35);
+}
+body.sidebar-open .backdrop {
+ opacity: 1;
+ pointer-events: auto;
+}
+/* Membership page list spacing */
+ol {
+ margin-top: 10px;
+ font-size: 17px;
+ margin-left: 21px;
+}
+.bulletlist{
+    margin-top:30px;
+    font-size: 17px;
+    margin-left: 40px;
+    list-style-type: square;
+}
+
+/* Meetings page table styling */
+table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 20px;
+}
+caption {
+ font-weight: bold;
+ margin-bottom: 8px;
+ text-align: left;
+}
+th, td {
+ border: 1px solid #ddd;
+ padding: 8px;
+ text-align: left;
+}
+th {
+ background-color: #f2f2f2;
+ font-weight: bold;
+}
+tr:nth-child(odd) {
+ background-color: #f9f9f9;
+}
+/* AI V4->V5 change end */
+/* Sitemap image sizing */
+.sitemap{
+ display:block;
+ margin: 20px auto;
+ width:80%;
+ height:auto;
+ object-fit:cover;
+}   

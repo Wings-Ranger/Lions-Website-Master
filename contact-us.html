@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <!-- AI V4->V5 change start: viewport, accessible navigation, contact-page structure/form fixes, and shared script import. Change log: Changes/changesV1.md lines 32-149 and 283-287; Changes/changesV2.md lines 77-93. -->
+  <!-- Shared page metadata and stylesheet links -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="images.css" />
+</head>
+<body>
+  <!-- Nav and backdrop are injected by site.js -->
+
+    <!-- Main contact details and visitor feedback form -->
+    <main class="editable">
+      <h1>Contact Us</h1>
+      <p>If you have any questions, comments, or would like to get involved with the Harcourt Lions Club, please use the contact details below.</p>
+
+      <!-- Club contact information -->
+      <address>
+        <p><strong>Email:</strong> <a href="mailto:200091068@students.bendigotafe.edu.au">200091068@students.bendigotafe.edu.au</a></p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Address:</strong> 123 Main Street, Harcourt, VIC 3453</p>
+      </address>
+
+      <p>We look forward to hearing from you and welcoming you to our community service efforts.</p>
+
+      <h2>Feedback Form</h2>
+      <!-- Simple feedback form for event responses -->
+      <form>
+        <label for="events">Event Feedback: how was the event?</label><br />
+        <select name="events" id="events">
+          <option value="good">The event was good</option>
+          <option value="medium">The event was decent</option>
+          <option value="bad">The event was bad</option>
+        </select>
+
+        <p><label for="event-date">What was the date of the event?</label></p>
+        <input type="date" id="event-date" name="event-date" />
+
+        <fieldset>
+          <legend>Would you like to attend future events?</legend>
+          <label><input type="radio" id="attend-yes" name="attend-events" value="yes" /> Yes, I would like to attend future events.</label><br />
+          <label><input type="radio" id="attend-no" name="attend-events" value="no" /> No, I would not like to attend future events.</label>
+        </fieldset>
+
+        <input type="submit" value="Submit Feedback" />
+      </form>
+    </main>
+
+    <!-- Shared navigation behaviour for the responsive menu -->
+    <script src="site.js" defer></script>
+  <!-- AI V4->V5 change end -->
+</body>
+</html>

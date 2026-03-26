@@ -1,0 +1,116 @@
+/*
+ * V5.1: This entire file has been commented out.
+ * None of the utility classes below are currently used in any HTML page.
+ * Uncomment individual classes if and when you add images that need them.
+ * The active responsive image defaults (main img, nav img, .billboard img)
+ * have been kept live in the first block only.
+ */
+
+/* Image Styling Options */
+
+/* AI V4->V5 change start: broad image defaults were scoped to safer contexts. Change log: Changes/changesV1.md lines 217-228; Changes/changesV2.md lines 161-165. */
+/* Default responsive behaviour for images used in main content and navigation. */
+main img,
+nav img,
+.billboard img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* AI V4->V5 change end */
+
+/*
+ * ---- UNUSED UTILITY CLASSES (commented out V5.1) ----
+ * Uncomment a class below when you actually use it in HTML.
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-bordered {
+    border: 2px solid #333;
+    padding: 8px;
+}
+
+.img-rounded {
+    border-radius: 8px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.img-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-shadow-lg {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.img-opacity-50 {
+    opacity: 0.5;
+}
+
+.img-opacity-75 {
+    opacity: 0.75;
+}
+
+.img-hover-zoom:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.img-hover-brightness:hover {
+    filter: brightness(1.2);
+    transition: filter 0.3s ease;
+}
+
+.img-small {
+    width: 150px;
+    height: 150px;
+}
+
+.img-medium {
+    width: 300px;
+    height: 300px;
+}
+
+.img-large {
+    width: 500px;
+    height: 500px;
+}
+
+.img-grayscale {
+    filter: grayscale(100%);
+}
+
+.img-sepia {
+    filter: sepia(100%);
+}
+
+.img-blur {
+    filter: blur(5px);
+}
+
+.img-left {
+    float: left;
+    margin-right: 15px;
+}
+
+.img-right {
+    float: right;
+    margin-left: 15px;
+}
+
+.img-center {
+    margin: 0 auto;
+    display: block;
+}
+
+ * ---- END UNUSED UTILITY CLASSES ----
+ */
