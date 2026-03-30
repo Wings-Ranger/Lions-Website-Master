@@ -6,9 +6,12 @@ Reviewed the HTML files in this folder:
 
 - `about-us.html`
 - `contact-us.html`
+- `gallery.html`
 - `Home.html`
 - `meetings.html`
 - `membership.html`
+- `projects.html`
+- `404.html`
 - `sitemap.html`
 
 The CSS files `images.css` and `style.css` were not included because they do not contain HTML markup.
@@ -19,9 +22,12 @@ The CSS files `images.css` and `style.css` were not included because they do not
 | --- | ---: |
 | `about-us.html` | 0 |
 | `contact-us.html` | 0 |
+| `gallery.html` | 0 |
 | `Home.html` | 0 |
 | `meetings.html` | 0 |
 | `membership.html` | 0 |
+| `projects.html` | 0 |
+| `404.html` | 0 |
 | `sitemap.html` | 0 |
 
 ## Findings By File
@@ -34,6 +40,10 @@ The CSS files `images.css` and `style.css` were not included because they do not
 
 - No structural violations found.
 
+### gallery.html
+
+- No structural violations found.
+
 ### Home.html
 
 No structural HTML violations were found during manual review.
@@ -43,6 +53,14 @@ No structural HTML violations were found during manual review.
 - No structural violations found.
 
 ### membership.html
+
+- No structural violations found.
+
+### projects.html
+
+- No structural violations found.
+
+### 404.html
 
 - No structural violations found.
 

@@ -7,11 +7,15 @@
 
 ## 1) What’s in the website folder?
 
-- **Home.html** – The homepage (has the large banner image and the mobile menu button).
+- **Home.html** – The homepage (hero banner, CTA buttons, upcoming event cards, and the large billboard image).
+- **about-us.html** – About the club.
 - **membership.html** – Membership info page.
 - **meetings.html** – Meetings info page.
-- **about-us.html** – About the club.
-- **style.css** – Controls the site’s look and behavior (colors, spacing, mobile sidebar, animations, etc.).
+- **contact-us.html** – Contact details and a map showing the Harcourt area.
+- **gallery.html** – Photo gallery (placeholder images — replace with real club photos).
+- **projects.html** – Community projects and activities listing with status badges.
+- **404.html** – Shown automatically when a visitor follows a broken link.
+- **style.css** – Controls the site's look and behavior (colors, spacing, mobile sidebar, animations, print styles, etc.).
 - **images/** – Folder for pictures (e.g., `lions-logo.jpg`, `lions-billboard.jpg`).
 
 > Any page you open in a browser automatically uses `style.css` to look right.
@@ -48,11 +52,10 @@ Below are common edits you can do yourself. Always **save a backup** before larg
 - Refresh the browser to see the update.
 
 ### B) Change or add links in the top menu
-- On each page, look for lines like: `<a href="membership.html">Membership</a>`.
-- To rename the menu label, change the words between `>` and `</a>`.
-- To link to a **new page** you’ve created (e.g., `projects.html`), add a similar line and set `href="projects.html"`.
-
-> Tip: For a brand‑new page, **duplicate** one of the existing `.html` files, rename it, and then edit its page title and content.
+- The navigation menu is defined in one place: **site.js**. Open `site.js` and look for the two lists labelled `sidebar` (mobile) and `top-nav` (desktop). Each menu item looks like: `'    <li><a href="meetings.html">Meetings</a></li>',`
+- To rename a label, change the text between `>` and `</a>`.
+- To add a **new page** (e.g., `events.html`), copy an existing line in **both** menu lists and update the `href` and label text.
+- Add the new page to the **footer** quick-links section in `site.js` the same way.
 
 ### C) Swap images (logo/banner/photos)
 - Put your new file in the **images/** folder.

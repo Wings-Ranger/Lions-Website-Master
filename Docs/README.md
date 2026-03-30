@@ -41,13 +41,16 @@ Not included in this package:
 
 | File | Purpose | Client Relevance |
 |---|---|---|
-| `Home.html` | Landing page and primary entry point for site visitors. | High |
+| `Home.html` | Landing page with hero section, CTA buttons, and upcoming event cards. | High |
 | `about-us.html` | Club background and organizational information page. | High |
 | `membership.html` | Membership details and onboarding information. | High |
 | `meetings.html` | Meeting schedule/content page for club events. | High |
-| `contact-us.html` | Contact form/details page for visitor enquiries. | High |
+| `contact-us.html` | Contact form/details page with map embed for visitor enquiries. | High |
+| `gallery.html` | Photo gallery grid (placeholder images — replace with real club photos). | High |
+| `projects.html` | Community projects listing with colour-coded status badges. | High |
+| `404.html` | Styled page-not-found error page with return-home button. | Medium |
 | `sitemap.html` | Human-readable site map page and navigational aid. | Medium |
-| `style.css` | Main visual theme, layout, and responsive behavior styles. | High |
+| `style.css` | Main visual theme, layout, responsive behavior, and print styles. | High |
 | `images.css` | Supplemental styling specific to image handling/presentation. | Medium |
 
 ### 4.2 Media Assets
@@ -91,12 +94,13 @@ Not included in this package:
 ## 5. Information Architecture
 
 Proposed visitor flow:
-1. Start at `Home.html`.
+1. Start at `Home.html` — hero, billboard, and upcoming events overview.
 2. Learn about the club in `about-us.html`.
-3. Review joining details in `membership.html`.
-4. Confirm schedules through `meetings.html`.
-5. Contact the club using `contact-us.html`.
-6. Use `sitemap.html` for full page overview.
+3. Browse community work in `projects.html` and `gallery.html`.
+4. Review joining details in `membership.html`.
+5. Confirm schedules through `meetings.html`.
+6. Contact the club using `contact-us.html`.
+7. Use `sitemap.html` for full page overview.
 
 ## 6. Hosting and Maintenance Model
 
@@ -107,12 +111,14 @@ Proposed visitor flow:
 
 ## 7. Quality and Readiness Notes
 
-Current package is ready for static deployment. During review, two page-title inconsistencies were observed and should be corrected before final production handoff:
+Current package is ready for static deployment.
 
-- `contact-us.html` currently reports `<title>About Us</title>`.
-- `sitemap.html` currently reports `<title>Meetings</title>`.
-
-Correcting these titles will improve browser tab labeling, accessibility context, and search clarity.
+Placeholder content still requiring club input before production:
+- Replace test contact details (email, phone, address) in `contact-us.html` with real club information.
+- Replace placeholder event dates and locations in `Home.html` event cards with real upcoming events.
+- Replace placeholder gallery images in `gallery.html` with real club photos.
+- Replace placeholder project descriptions in `projects.html` with confirmed club projects.
+- Update social media links in the site footer (currently linking to `#`) once the club's pages are confirmed.
 
 ## 8. Acceptance Checklist
 
