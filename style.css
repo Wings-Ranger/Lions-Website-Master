@@ -18,6 +18,12 @@ background-repeat: no-repeat;
 min-height: 100vh;
 transition: overflow 0.25s ease;
 padding-top: var(--nav-height);
+display: flex;
+flex-direction: column;
+}
+/* Keep footer at viewport bottom on short pages while allowing scroll on long pages. */
+main {
+ flex: 1 0 auto;
 }
 /* Lock page scrolling while the off-canvas menu is open. */
 body.sidebar-open {
@@ -509,7 +515,7 @@ tr:nth-child(odd) {
 .site-footer {
   background: #1a1a1a;
   color: #ccc;
-  margin-top: 48px;
+  margin-top: auto;
 }
 .footer-inner {
   max-width: 1100px;
