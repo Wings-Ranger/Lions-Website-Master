@@ -17,6 +17,8 @@
     '    <li><a href="meetings.html">Meetings</a></li>',
     '    <li><a href="about-us.html">About Us</a></li>',
     '    <li><a href="contact-us.html">Contact Us</a></li>',
+    '    <li><a href="gallery.html">Gallery</a></li>',
+    '    <li><a href="projects.html">Projects</a></li>',
     '    <li><a href="sitemap.html">Site Map</a></li>',
     '  </ul>',
     '  <ul class="top-nav" aria-label="Desktop menu">',
@@ -26,6 +28,8 @@
     '    <li class="hideonmobile"><a href="meetings.html">Meetings</a></li>',
     '    <li class="hideonmobile"><a href="about-us.html">About Us</a></li>',
     '    <li class="hideonmobile"><a href="contact-us.html">Contact Us</a></li>',
+    '    <li class="hideonmobile"><a href="gallery.html">Gallery</a></li>',
+    '    <li class="hideonmobile"><a href="projects.html">Projects</a></li>',
     '    <li class="hideonmobile"><a href="sitemap.html">Site Map</a></li>',
     '    <li class="menu-button">',
     '      <button type="button" class="icon-button open-sidebar" aria-label="Open menu">\u2630</button>',
@@ -90,5 +94,87 @@
       link.setAttribute("aria-current", "page");
     }
   });
+
+  // ---------------------------------------------------------------------------
+  // 3. Inject the shared footer into every page.
+  // ---------------------------------------------------------------------------
+  var FOOTER_HTML = [
+    '<footer class="site-footer">',
+    '  <div class="footer-inner">',
+    '    <div class="footer-col">',
+    '      <h3>Harcourt Lions Club</h3>',
+    '      <p>Serving Harcourt and surrounds through community action, fundraising, and friendship.</p>',
+    '    </div>',
+    '    <div class="footer-col">',
+    '      <h3>Quick Links</h3>',
+    '      <ul>',
+    '        <li><a href="Home.html">Home</a></li>',
+    '        <li><a href="membership.html">Membership</a></li>',
+    '        <li><a href="meetings.html">Meetings</a></li>',
+    '        <li><a href="about-us.html">About Us</a></li>',
+    '        <li><a href="contact-us.html">Contact Us</a></li>',
+    '        <li><a href="gallery.html">Gallery</a></li>',
+    '        <li><a href="projects.html">Projects</a></li>',
+    '      </ul>',
+    '    </div>',
+    '    <div class="footer-col">',
+    '      <h3>Follow Us</h3>',
+    '      <div class="social-links">',
+    '        <a href="#" class="social-link" aria-label="Harcourt Lions on Facebook">Facebook</a>',
+    '        <a href="#" class="social-link" aria-label="Harcourt Lions on Instagram">Instagram</a>',
+    '      </div>',
+    '      <h3 class="newsletter-heading">Newsletter</h3>',
+    '      <form class="newsletter-form" id="newsletter-form" novalidate>',
+    '        <label for="newsletter-email" class="sr-only">Your email address</label>',
+    '        <div class="newsletter-row">',
+    '          <input type="email" id="newsletter-email" name="email" placeholder="Your email address" required />',
+    '          <button type="submit" class="btn btn-primary">Subscribe</button>',
+    '        </div>',
+    '        <p class="newsletter-msg" id="newsletter-msg" aria-live="polite" hidden></p>',
+    '      </form>',
+    '    </div>',
+    '  </div>',
+    '  <div class="footer-bottom">',
+    '    <p>&copy; 2026 Harcourt Lions Club. All rights reserved.</p>',
+    '  </div>',
+    '</footer>'
+  ].join('\n');
+
+  var mainEl = document.querySelector('main');
+  if (mainEl) {
+    mainEl.insertAdjacentHTML('afterend', FOOTER_HTML);
+  }
+
+  // Newsletter subscribe handler
+  var newsletterForm = document.getElementById('newsletter-form');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var emailInput = document.getElementById('newsletter-email');
+      var msg = document.getElementById('newsletter-msg');
+      if (emailInput && msg && emailInput.value) {
+        msg.textContent = 'Thanks! We\u2019ll be in touch.';
+        msg.hidden = false;
+        emailInput.value = '';
+      }
+    });
+  }
+
+  // ---------------------------------------------------------------------------
+  // 4. Inject and wire up the back-to-top button.
+  // ---------------------------------------------------------------------------
+  document.body.insertAdjacentHTML('beforeend',
+    '<button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>&#9650; Top</button>'
+  );
+
+  var backTopBtn = document.getElementById('back-to-top');
+  if (backTopBtn) {
+    window.addEventListener('scroll', function () {
+      backTopBtn.hidden = window.scrollY < 300;
+    }, { passive: true });
+    backTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 })();
 /* AI V4->V5 change end */
