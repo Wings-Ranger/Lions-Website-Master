@@ -1,6 +1,8 @@
 # Learning Resources Index
 
-This folder contains one file per major technique used across all V5 and V5.1 changes.
+Last updated: 2026-03-30 20:44:23 +11:00
+
+This folder contains one file per major technique used across V5 through V6.1 changes.
 Each file covers: what the technique is, when to use it, how to implement it, and where to learn more.
 
 ---
@@ -21,9 +23,17 @@ Each file covers: what the technique is, when to use it, how to implement it, an
 | [css-sidebar-overlay.md](css-sidebar-overlay.md) | Off-canvas sidebar, backdrop, `transform: translateX`, `pointer-events` | changesV1 §9, changesV2 style.css |
 | [js-dom-injection.md](js-dom-injection.md) | `insertAdjacentHTML` — injecting shared HTML from JS | changesV3 group 1 |
 | [css-custom-properties.md](css-custom-properties.md) | `:root` CSS variables (`--accent`, `var()`) — design tokens | changesV3 group 8 |
+| [css-grid-cards-and-gallery.md](css-grid-cards-and-gallery.md) | Responsive card/gallery layouts with CSS Grid (`repeat`, `minmax`, `auto-fit`, `auto-fill`) | changesV5 style.css |
+| [css-sticky-footer-flexbox.md](css-sticky-footer-flexbox.md) | Sticky footer layout with flexbox (`main` growth + footer auto margin) | changesV6 style.css |
+| [fluid-typography-with-clamp.md](fluid-typography-with-clamp.md) | Fluid responsive typography with `clamp(min, preferred, max)` | changesV5 style.css |
 | [editorconfig.md](editorconfig.md) | `.editorconfig` — enforcing consistent formatting across editors | changesV3 group 9 |
 | [css-housekeeping.md](css-housekeeping.md) | Commenting out dead CSS; utility class libraries | changesV3 group 10 |
+| [print-styles.md](print-styles.md) | Print-only CSS with `@media print` for cleaner paper output | changesV5 style.css |
 | [js-script-loading-and-injection.md](js-script-loading-and-injection.md) | Linking `.js` files to HTML; `defer`/`async`; all four injection positions; XSS risks | V5.2 session notes |
+| [aria-live-status-messages.md](aria-live-status-messages.md) | Accessible dynamic status messaging with `aria-live` regions | changesV5 site.js |
+| [visually-hidden-sr-only.md](visually-hidden-sr-only.md) | Accessible visually-hidden utility text for screen-reader labels | changesV5 style.css + site.js |
+| [embedded-maps-and-safe-external-links.md](embedded-maps-and-safe-external-links.md) | Embedded map iframes, lazy loading, and secure external-link attributes | changesV5 contact-us.html |
+| [scroll-events-and-passive-listeners.md](scroll-events-and-passive-listeners.md) | Scroll-driven UI and passive listeners for smooth performance | changesV5 site.js |
 
 ---
 

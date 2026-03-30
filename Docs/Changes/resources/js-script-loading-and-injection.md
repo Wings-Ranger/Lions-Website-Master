@@ -1,5 +1,7 @@
 # JavaScript Script Loading and DOM Injection
 
+Last updated: 2026-03-30 20:44:23 +11:00
+
 **Related resources:** `js-dom-injection.md` · `shared-javascript.md`
 
 ---

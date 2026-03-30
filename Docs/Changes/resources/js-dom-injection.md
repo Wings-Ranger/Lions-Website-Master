@@ -1,5 +1,7 @@
 # JavaScript DOM Injection (`insertAdjacentHTML`)
 
+Last updated: 2026-03-30 20:44:23 +11:00
+
 **Used in:** changesV3 group 1
 
 ---

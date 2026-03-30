@@ -1,5 +1,7 @@
 # CSS Scoping and Selector Specificity
 
+Last updated: 2026-03-30 20:44:23 +11:00
+
 **Used in:** changesV1 §10 · changesV2 images.css · changesV3 group 10
 
 ---
