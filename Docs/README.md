@@ -113,6 +113,9 @@ Proposed visitor flow:
 
 Current package is ready for static deployment.
 
+Recent layout improvement:
+- Footer now stays anchored to the bottom of the viewport on short pages and remains below content on long pages.
+
 Placeholder content still requiring club input before production:
 - Replace test contact details (email, phone, address) in `contact-us.html` with real club information.
 - Replace placeholder event dates and locations in `Home.html` event cards with real upcoming events.

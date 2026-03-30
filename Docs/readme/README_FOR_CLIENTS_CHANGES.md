@@ -15,6 +15,7 @@
 - **gallery.html** – Photo gallery (placeholder images — replace with real club photos).
 - **projects.html** – Community projects and activities listing with status badges.
 - **404.html** – Shown automatically when a visitor follows a broken link.
+- **site.js** – Injects shared navigation and footer into every page, and controls mobile menu behavior.
 - **style.css** – Controls the site's look and behavior (colors, spacing, mobile sidebar, animations, print styles, etc.).
 - **images/** – Folder for pictures (e.g., `lions-logo.jpg`, `lions-billboard.jpg`).
 
@@ -67,6 +68,7 @@ Below are common edits you can do yourself. Always **save a backup** before larg
 - Open **style.css**.
 - Menu colors live around the `nav` and `nav a` sections.
 - Spacing (margins/padding) is also set in `style.css`.
+- Footer position is controlled by the `body`, `main`, and `.site-footer` rules (sticky on short pages, natural flow on long pages).
 - If you’re unsure, change **one thing at a time**, save, and refresh to review.
 
 ### E) Control when the hamburger shows
@@ -90,7 +92,7 @@ Below are common edits you can do yourself. Always **save a backup** before larg
 ## 5) What **not** to change (or do so with care)
 
 - Don’t remove the `<link rel="stylesheet" href="style.css">` line at the top of each page—without it, pages lose their styles.
-- Don’t delete the small **script** at the bottom of **Home.html**—that’s what toggles the mobile menu.
+- Don’t remove `<script src="site.js" defer></script>` at the bottom of pages—navigation and footer are injected from this script.
 - Avoid moving files out of the folder structure shown. If paths change, images and styles may stop working.
 
 ---
@@ -101,9 +103,9 @@ Below are common edits you can do yourself. Always **save a backup** before larg
 2. Open the new file and change:
    - The `<title>…</title>` text at the top (browser tab title).
    - The visible heading and page content.
-3. Add a new link to the menu on **each** page so visitors can reach it:
-   - Example: `<li class="hideonmobile"><a href="projects.html">Projects</a></li>`
-   - Add the same link inside the mobile **sidebar** list as well.
+3. Add the page to navigation in **site.js** (not each HTML page):
+   - Add one link in the desktop `top-nav` list and one in the mobile `sidebar` list.
+   - Add the page to the footer quick-links list in `site.js`.
 4. Save and refresh.
 
 ---
@@ -111,7 +113,8 @@ Below are common edits you can do yourself. Always **save a backup** before larg
 ## 7) Troubleshooting (quick checks)
 
 - **Menu button missing?** Make the browser window narrower; it only shows on small screens. Check `@media (max-width: 800px)` in `style.css`.
-- **Sidebar not sliding?** Ensure the script in `Home.html` still adds/removes `sidebar-open` and the `.sidebar` styles in `style.css` are intact.
+- **Sidebar not sliding?** Ensure `site.js` is still loaded on the page and the `.sidebar` styles in `style.css` are intact.
+- **Footer not at the bottom on short pages?** Check that `body` is a flex column, `main` uses `flex: 1 0 auto`, and `.site-footer` uses `margin-top: auto` in `style.css`.
 - **An image doesn’t show?** Confirm the image is in the `images/` folder and the `src` path is exact (including file extension like `.jpg` or `.png`).
 - **Weird layout after edits?** Undo your last change or compare with a backup; small typos in HTML/CSS can break layout.
 
@@ -129,6 +132,7 @@ Below are common edits you can do yourself. Always **save a backup** before larg
 ## 9) Quick reference – where to edit what
 
 - **Words, headings, and links:** the relevant `.html` file(s)
+- **Top navigation and footer links:** `site.js`
 - **Colors/spacing/fonts/animations:** `style.css`
 - **Images:** put files in `images/` and update `<img src="…">` in the `.html`
 - **Mobile menu timing/feel:** the `.sidebar` transition in `style.css`
