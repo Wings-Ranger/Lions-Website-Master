@@ -76,6 +76,7 @@ Not included in this package:
 | `readme/README_FOR_CLIENTS_CHANGES.md` | Client-focused guide for safe content changes. | High |
 | `readme/README_FOR_NON_DEVS.md` | Plain-language instructions for non-technical editors. | High |
 | `readme/README_FOR_ABSOLUTE_BEGINNERS.md` | Zero-technical-knowledge quick-start guide for first-time editors. | High |
+| `readme/README_FOR_GITHUB_VERSION_CONTROL.md` | Beginner guide to GitHub version control, branching, commits, pull requests, and rollback workflow for maintainers. | High |
 | `readme/original_files.zip` | Archived snapshot/reference copy of earlier project files. | Low |
 
 ### 4.5 Project and Tooling Metadata
