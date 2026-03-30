@@ -29,8 +29,8 @@ This project uses an OpenStreetMap embed with `loading="lazy"`, `referrerpolicy`
 <iframe
   title="Map showing Harcourt, Victoria"
   src="https://www.openstreetmap.org/export/embed.html?..."
-  width="100%"
-  height="350"
+  width="50%"
+  height="50%"
   style="border:0;"
   loading="lazy"
   referrerpolicy="no-referrer"
