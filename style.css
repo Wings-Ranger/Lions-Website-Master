@@ -231,6 +231,40 @@ body.sidebar-open .backdrop {
  opacity: 1;
  pointer-events: auto;
 }
+
+/* Fallback nav shown only when JavaScript is disabled. */
+nav.no-script-nav {
+ background: #f0f0f0;
+ border-bottom: 1px solid #d9d9d9;
+ padding: 12px 16px;
+ position: static;
+ margin: 0;
+ height: auto;
+ box-shadow: none;
+ z-index: auto;
+}
+nav.no-script-nav ul {
+ list-style: none;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 12px;
+ margin: 0;
+ padding: 0;
+ width: auto;
+ justify-content: flex-start;
+ align-items: center;
+}
+nav.no-script-nav li {
+ margin-right: 0;
+}
+nav.no-script-nav a {
+ color: #003087;
+ font-weight: bold;
+ text-decoration: none;
+}
+nav.no-script-nav a:hover {
+ text-decoration: underline;
+}
 /* Membership page list spacing */
 ol {
  margin-top: 10px;
@@ -492,6 +526,66 @@ tr:nth-child(odd) {
 .status-active   { background: #d4edda; color: #155724; }
 .status-complete { background: #cce5ff; color: #004085; }
 .status-upcoming { background: #fff3cd; color: #856404; }
+
+/* ============================================================
+   MEMBERSHIP PAGE - ONBOARDING TIMELINE
+   ============================================================ */
+.onboarding-timeline {
+  margin-top: 24px;
+  display: grid;
+  gap: 14px;
+}
+.timeline-step {
+  border-left: 4px solid var(--accent);
+  background: #f8f9fc;
+  padding: 12px 14px;
+  border-radius: 4px;
+}
+.timeline-step h3 {
+  margin: 0 0 6px;
+  font-size: 1.02rem;
+  color: #003087;
+}
+.timeline-step p {
+  margin: 0;
+  color: #444;
+}
+
+/* ============================================================
+   RESOURCES PAGE
+   ============================================================ */
+.resources-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.resource-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  padding: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.resource-card h2 {
+  font-size: 1.08rem;
+  margin-bottom: 8px;
+}
+.resource-meta {
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+.resource-note {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #444;
+}
 
 /* ============================================================
    PAGE HEADER (gallery / projects)
