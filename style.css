@@ -62,7 +62,7 @@ position:fixed;
  height: var(--nav-height);
 }
 /* Horizontal nav list layout */
-nav ul{
+nav > ul{
  width:100%;
  list-style-type: none;
  display: flex;
@@ -70,7 +70,7 @@ nav ul{
  padding: 10px 0;
 }
 /* Space between top-level navigation items */
-nav li{
+nav > ul > li{
  margin-right: 30px;
 }
 /* Shared link styling for the navigation menus */
@@ -109,8 +109,39 @@ nav a[aria-current="page"] {
   font-weight: bold;
 }
 /* Push the logo to the left edge of the nav bar. */
-nav li:first-child{
+nav > ul > li:first-child{
  margin-right: auto;
+}
+
+/* Desktop dropdown under Membership. */
+.top-nav .nav-dropdown {
+ position: relative;
+}
+.top-nav .dropdown-menu {
+ list-style: none;
+ position: absolute;
+ top: calc(100% + 8px);
+ left: 0;
+ min-width: 190px;
+ padding: 8px 0;
+ margin: 0;
+ display: none;
+ background: #fff;
+ border: 1px solid #ddd;
+ box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+ z-index: 1200;
+}
+.top-nav .dropdown-menu li {
+ margin-right: 0;
+}
+.top-nav .dropdown-menu a {
+ display: block;
+ padding: 8px 14px;
+ white-space: nowrap;
+}
+.top-nav .nav-dropdown:hover .dropdown-menu,
+.top-nav .nav-dropdown:focus-within .dropdown-menu {
+ display: block;
 }
 /* Mobile sidebar menu */
 .sidebar{
@@ -179,6 +210,19 @@ body.sidebar-open .sidebar {
  color:white;
  background-color: var(--accent);
  font-weight: bold;
+}
+.sidebar-submenu {
+ list-style: none;
+ margin: 0;
+ padding: 0 0 0 20px;
+}
+.sidebar-submenu li {
+ padding: 8px 0 0;
+}
+.sidebar-submenu a {
+ font-size: 16px;
+ padding: 10px 12px;
+ border-left: 2px solid #d8d8d8;
 }
 .menu-button
 {display:none;}
