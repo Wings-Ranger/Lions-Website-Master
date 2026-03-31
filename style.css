@@ -196,18 +196,21 @@ body.sidebar-open .sidebar {
  font-size:18px;
 }
 .sidebar .close-btn{
- position: absolute;
- top: 15px;
- right:25px;
- left: auto;
+ position: sticky;
+ top: 0;
+ z-index: 2;
  margin-right: 0;
- width:auto;
+ margin-left: auto;
+ width: 100%;
+ display: flex;
+ justify-content: flex-end;
+ padding: 12px 16px;
+ background-color: #f0f0f0;
+ border-bottom: 1px solid #d9d9d9;
 }
-.sidebar .close-btn a{
+.sidebar .close-btn .icon-button {
  padding: 0;
- width: auto;
  font-size: 30px;
- display: inline;
 }
 .sidebar a:hover {
  color:white;
