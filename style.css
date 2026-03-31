@@ -164,6 +164,9 @@ nav > ul > li:first-child{
  transition: transform 0.3s ease-in-out;
  will-change: transform;
  pointer-events: none; /* Prevent interaction when hidden */
+ overflow-y: auto;
+ -webkit-overflow-scrolling: touch;
+ padding-bottom: 24px;
 }
 body.sidebar-open .sidebar {
  transform: translateX(0);
