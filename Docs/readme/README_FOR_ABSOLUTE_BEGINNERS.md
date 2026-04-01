@@ -15,23 +15,32 @@ Main pages:
 - Membership page
 - Meetings page
 - Contact Us page
+- Gallery page
+- Projects page
+- Resources page
 - Site Map page
+- 404 (page not found) page
 
 ## Where the website files are
 
-In the Lions v3 folder, these are the important files:
+In the website folder, these are the important files:
 - Home.html
 - about-us.html
 - membership.html
 - meetings.html
 - contact-us.html
+- gallery.html
+- projects.html
+- resources.html
+- 404.html
 - sitemap.html
+- site.js (adds the menu and footer to every page)
 - style.css
 - images folder (this stores pictures)
 
 ## Before you change anything (important)
 
-1. Make a copy of the whole Lions v3 folder.
+1. Make a copy of the whole website folder.
 2. Rename the copy to include today's date.
 3. Only edit one thing at a time.
 
@@ -39,7 +48,7 @@ If something goes wrong, use your backup copy.
 
 ## How to open the website
 
-1. Open the Lions v3 folder.
+1. Open the website folder.
 2. Double-click Home.html.
 3. Your browser will open the website.
 
@@ -91,7 +100,7 @@ Problem: Menu links stop working.
 
 Problem: Page has no styling.
 - style.css may be moved or renamed.
-- Put style.css back in the main Lions v3 folder.
+- Put style.css back in the main website folder.
 
 Problem: Image is missing.
 - Check the image file is in the images folder.

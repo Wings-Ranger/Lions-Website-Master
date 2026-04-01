@@ -167,28 +167,11 @@ if (!document.getElementById('site-nav-injected')) {
 
 ---
 
-### Issue: Runtime critical dependency removes nav on JS failure
+### ~~Issue: Runtime critical dependency removes nav on JS failure~~ RESOLVED (V7)
 
-**Noted because:** All 6 HTML pages depend entirely on `site.js` to provide navigation.
+**Status:** Resolved. All 10 HTML pages now include `<noscript>` fallback navigation blocks. See `changesV7.md` and `Problems/html.md` for details.
 
-**Why this matters:**
-- Slow script loading delays nav availability (blank page initially).
-- Failed script download leaves page without nav.
-- No graceful degradation.
-
-**Better way:**
-
-Implement progressive enhancement (see `html.md` for details). Add a no-script fallback in each HTML page:
-
-```html
-<noscript>
-    <nav><!-- minimal fallback nav --></nav>
-</noscript>
-```
-
-Then style it and let JavaScript enhancement work on top.
-
-**Refresher path:** Study progressive enhancement and the resilience model.
+**Original issue:** All HTML pages depended entirely on `site.js` to provide navigation with no fallback.
 
 ---
 
@@ -197,4 +180,4 @@ Then style it and let JavaScript enhancement work on top.
 - [ ] Extract links to data array and render both nav structures from it.
 - [ ] Normalize URL matching (lowercase, strip query strings).
 - [ ] Guard against duplicate injection.
-- [ ] Add no-script fallback nav in HTML pages.
+- [x] ~~Add no-script fallback nav in HTML pages.~~ (Resolved V7)

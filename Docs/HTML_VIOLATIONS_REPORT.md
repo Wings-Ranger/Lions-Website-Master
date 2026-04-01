@@ -11,6 +11,7 @@ Reviewed the HTML files in this folder:
 - `meetings.html`
 - `membership.html`
 - `projects.html`
+- `resources.html`
 - `404.html`
 - `sitemap.html`
 
@@ -27,6 +28,7 @@ The CSS files `images.css` and `style.css` were not included because they do not
 | `meetings.html` | 0 |
 | `membership.html` | 0 |
 | `projects.html` | 0 |
+| `resources.html` | 0 |
 | `404.html` | 0 |
 | `sitemap.html` | 0 |
 
@@ -57,6 +59,10 @@ No structural HTML violations were found during manual review.
 - No structural violations found.
 
 ### projects.html
+
+- No structural violations found.
+
+### resources.html
 
 - No structural violations found.
 

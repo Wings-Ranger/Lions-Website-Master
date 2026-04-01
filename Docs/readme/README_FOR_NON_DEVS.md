@@ -11,6 +11,7 @@ This guide explains how to update the website safely without technical experienc
 - `contact-us.html` - Contact details and map.
 - `gallery.html` - Photo gallery page.
 - `projects.html` - Projects and community activities page.
+- `resources.html` - Downloadable resources for members and volunteers.
 - `404.html` - Page shown when a link is broken.
 - `site.js` - Adds shared navigation and footer to every page.
 - `style.css` - Controls layout, colours, spacing, responsive behavior, and footer positioning.

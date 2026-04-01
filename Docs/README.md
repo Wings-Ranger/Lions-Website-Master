@@ -4,7 +4,7 @@ Prepared: March 19, 2026
 
 ## 1. Proposal Summary
 
-This document presents the current Lions v3 website package as a client-ready proposal. It explains what is included, what each file does, and how the deliverable supports a maintainable, easy-to-update club website.
+This document presents the current Lions website package as a client-ready proposal. It explains what is included, what each file does, and how the deliverable supports a maintainable, easy-to-update club website.
 
 The website is a static, multi-page build using HTML and CSS, designed for simple hosting and low ongoing maintenance overhead.
 
@@ -49,6 +49,7 @@ Not included in this package:
 | `gallery.html` | Photo gallery grid (placeholder images — replace with real club photos). | High |
 | `projects.html` | Community projects listing with colour-coded status badges. | High |
 | `404.html` | Styled page-not-found error page with return-home button. | Medium |
+| `resources.html` | Downloadable resources page with placeholder member/volunteer materials. | High |
 | `sitemap.html` | Human-readable site map page and navigational aid. | Medium |
 | `style.css` | Main visual theme, layout, responsive behavior, and print styles. | High |
 | `images.css` | Supplemental styling specific to image handling/presentation. | Medium |
@@ -77,6 +78,8 @@ Not included in this package:
 | `readme/README_FOR_NON_DEVS.md` | Plain-language instructions for non-technical editors. | High |
 | `readme/README_FOR_ABSOLUTE_BEGINNERS.md` | Zero-technical-knowledge quick-start guide for first-time editors. | High |
 | `readme/README_FOR_GITHUB_VERSION_CONTROL.md` | Beginner guide to GitHub version control, branching, commits, pull requests, and rollback workflow for maintainers. | High |
+| `readme/HOSTING_REQUIREMENTS_FOR_LIONS_BACKEND.md` | Formal hosting requirements for future server-side authentication and CMS features. | Medium |
+| `readme/MESSAGE_TO_HARCOURT_LIONS_CLUB_ABOUT_DESIGN.md` | Letter explaining design rationale and philosophy to the Lions Club. | Medium |
 | `readme/original_files.zip` | Archived snapshot/reference copy of earlier project files. | Low |
 
 ### 4.5 Project and Tooling Metadata
@@ -84,6 +87,7 @@ Not included in this package:
 | File | Purpose | Client Relevance |
 |---|---|---|
 | `.github/agents/documentation-agent.agent.md` | VS Code/GitHub Copilot agent configuration for documentation workflows. | Low |
+| `.github/agents/markdown-change-reporter.agent.md` | GitHub/Copilot agent for automated markdown change reporting. | Low |
 | `.vs/slnx.sqlite` | Visual Studio local workspace database/cache. | Low (development only) |
 | `.vs/VSWorkspaceState.json` | Visual Studio local workspace state settings. | Low (development only) |
 | `.vs/Lions.slnx/config/applicationhost.config` | Local IIS Express host configuration for development/testing. | Low (development only) |
@@ -101,7 +105,8 @@ Proposed visitor flow:
 4. Review joining details in `membership.html`.
 5. Confirm schedules through `meetings.html`.
 6. Contact the club using `contact-us.html`.
-7. Use `sitemap.html` for full page overview.
+7. Access downloadable resources via `resources.html`.
+8. Use `sitemap.html` for full page overview.
 
 ## 6. Hosting and Maintenance Model
 
@@ -122,6 +127,7 @@ Placeholder content still requiring club input before production:
 - Replace placeholder event dates and locations in `Home.html` event cards with real upcoming events.
 - Replace placeholder gallery images in `gallery.html` with real club photos.
 - Replace placeholder project descriptions in `projects.html` with confirmed club projects.
+- Replace placeholder download links and documents in `resources.html` with real club materials.
 - Update social media links in the site footer (currently linking to `#`) once the club's pages are confirmed.
 
 ## 8. Acceptance Checklist

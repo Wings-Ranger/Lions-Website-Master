@@ -1,6 +1,8 @@
 # Harcourt Lions Australia – Sidebar Slide-in Update
 
-This README explains **every change line-by-line** applied to your files to enable a smooth slide-in sidebar, hide the hamburger while open, and add an optional dimmed backdrop.
+> **ARCHIVED (Pre-V5):** This document describes an earlier sidebar implementation that used inline `showSidebar()`/`hideSidebar()` functions in each HTML page with `onclick` handlers and a backdrop `<div>` in HTML. **This approach has been replaced.** The current site uses `site.js` to inject and manage navigation, sidebar, and backdrop automatically. See `README_FOR_CLIENTS_CHANGES.md` for the current description.
+
+This README is kept for historical reference only.
 
 ## Summary of changes
 

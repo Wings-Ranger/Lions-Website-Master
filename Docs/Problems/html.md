@@ -1,7 +1,7 @@
 # Problems Report: HTML Files (Cross-File Issues)
 
 ## Why this report exists
-These issues appear in **all 6 HTML pages** in this project. Rather than repeating the same issue 6 times, we list them once here with the affected files.
+These issues appear in **all 10 HTML pages** in this project. Rather than repeating the same issue 10 times, we list them once here with the affected files.
 
 ## Affected files
 - Home.html
@@ -10,6 +10,10 @@ These issues appear in **all 6 HTML pages** in this project. Rather than repeati
 - meetings.html
 - membership.html
 - sitemap.html
+- gallery.html
+- projects.html
+- 404.html
+- resources.html
 
 ---
 
@@ -46,57 +50,20 @@ Create a template meta-set and apply to each page:
 - **membership.html:** "Join Harcourt Lions Club. Learn membership requirements and steps to become a member..."
 - **contact-us.html:** "Contact Harcourt Lions Club directly. Email, phone, address, and feedback form..."
 - **sitemap.html:** "Sitemap of all pages on the Harcourt Lions Club website..."
+- **gallery.html:** "Photo gallery of Harcourt Lions Club events and community activities..."
+- **projects.html:** "Community projects and volunteer activities by Harcourt Lions Club..."
+- **resources.html:** "Downloadable resources for Harcourt Lions Club members and volunteers..."
+- **404.html:** "Page not found — return to Harcourt Lions Club homepage..."
 
 **Refresher path:** Review SEO metadata best practices and static-site metadata templates.
 
 ---
 
-### Issue: Navigation is JavaScript-dependent only (all pages)
+### ~~Issue: Navigation is JavaScript-dependent only (all pages)~~ RESOLVED (V7)
 
-**Noted because:** All 6 pages depend on `site.js` to inject the nav at runtime.
+**Status:** Resolved. All 10 HTML pages now include `<noscript>` fallback navigation blocks providing basic navigation when JavaScript is unavailable. See `changesV7.md` for details.
 
-**Why this matters:**
-- If JavaScript fails to load or is blocked, users lose primary navigation.
-- Search engine crawlers may see incomplete page structure.
-- Accessibility tools may struggle to understand the page layout.
-
-**Better way:**
-
-Implement progressive enhancement:
-
-**Option 1 (quick):** Add a no-script fallback:
-```html
-<noscript>
-    <nav class="no-script-nav">
-        <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="membership.html">Membership</a></li>
-            <li><a href="meetings.html">Meetings</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-            <li><a href="sitemap.html">Site Map</a></li>
-        </ul>
-    </nav>
-</noscript>
-```
-
-Then add minimal CSS to show it:
-```css
-nav.no-script-nav {
-    background: #f0f0f0;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-nav.no-script-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-```
-
-**Option 2 (better):** Use a static build tool or server-side include to generate nav into each page, removing JS dependency entirely.
-
-**Refresher path:** Study progressive enhancement and graceful degradation for critical page elements.
+**Original issue:** All pages depended on `site.js` to inject the nav at runtime with no fallback.
 
 ---
 
@@ -127,5 +94,5 @@ With:
 
 ## Quick maintenance checklist for all HTML files
 - [ ] Add meta description to each page head.
-- [ ] Add no-script fallback nav or migrate to static/server-side nav generation.
+- [x] ~~Add no-script fallback nav or migrate to static/server-side nav generation.~~ (Resolved V7)
 - [ ] Remove XHTML namespace from html tag.

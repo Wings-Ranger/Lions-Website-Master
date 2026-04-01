@@ -5,7 +5,7 @@ This document lists the Lions V5 AI source files that contain explicit AI attrib
 Use this file as a quick reference when identifying which changes were AI-assisted rather than manually authored.
 
 Date created: 2026-03-25
-Last updated: 2026-03-30 (V6)
+Last updated: 2026-04-01 (V7)
 
 ## What the markers look like
 
@@ -36,6 +36,7 @@ Each marker also includes references to the matching entries in:
 | `gallery.html` | **New file (V5.3).** Photo gallery page with a responsive CSS Grid layout, 9 placeholder `<figure>` items with `loading="lazy"` images and `<figcaption>` labels. Inherits shared nav and footer from `site.js`. | `changesV5.md` gallery.html section |
 | `projects.html` | **New file (V5.3).** Community projects page with 6 project cards, each with a heading and a colour-coded status badge (Active / Upcoming / Completed). Inherits shared nav and footer from `site.js`. | `changesV5.md` projects.html section |
 | `404.html` | **New file (V5.3).** Styled page-not-found error page with accessible `aria-labelledby` on `<main>` and a `.btn.btn-primary` return-home link. Inherits shared nav and footer from `site.js`. | `changesV5.md` 404.html section |
+| `resources.html` | **New file (V7).** Downloadable resources page with four placeholder resource cards, `<noscript>` fallback nav, and `.resource-grid` card layout. Linked from navigation dropdown under Membership. | `changesV7.md` resources.html section |
 
 ## Notes
 

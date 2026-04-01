@@ -15,6 +15,8 @@
 - **gallery.html** – Photo gallery (placeholder images — replace with real club photos).
 - **projects.html** – Community projects and activities listing with status badges.
 - **404.html** – Shown automatically when a visitor follows a broken link.
+- **sitemap.html** – Human-readable site map page and navigational aid.
+- **resources.html** – Downloadable resources for members, volunteers, and event teams (placeholder files — replace with real club materials).
 - **site.js** – Injects shared navigation and footer into every page, and controls mobile menu behavior.
 - **style.css** – Controls the site's look and behavior (colors, spacing, mobile sidebar, animations, print styles, etc.).
 - **images/** – Folder for pictures (e.g., `lions-logo.jpg`, `lions-billboard.jpg`).
@@ -53,7 +55,7 @@ Below are common edits you can do yourself. Always **save a backup** before larg
 - Refresh the browser to see the update.
 
 ### B) Change or add links in the top menu
-- The navigation menu is defined in one place: **site.js**. Open `site.js` and look for the two lists labelled `sidebar` (mobile) and `top-nav` (desktop). Each menu item looks like: `'    <li><a href="meetings.html">Meetings</a></li>',`
+- The navigation menu is defined in one place: **site.js**. Open `site.js` and look for the two lists labelled `sidebar` (mobile) and `top-nav` (desktop). Some menu items have dropdown submenus (e.g., "Membership" contains "Resources" as a child link). Each menu item looks like: `'    <li><a href="meetings.html">Meetings</a></li>',`
 - To rename a label, change the text between `>` and `</a>`.
 - To add a **new page** (e.g., `events.html`), copy an existing line in **both** menu lists and update the `href` and label text.
 - Add the new page to the **footer** quick-links section in `site.js` the same way.
