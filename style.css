@@ -59,7 +59,8 @@ position:fixed;
  left:0;
  right:0;
  z-index: 1000;
- height: var(--nav-height);
+ min-height: var(--nav-height);
+ height: auto;
 }
 /* Horizontal nav list layout */
 nav > ul{
@@ -67,6 +68,7 @@ nav > ul{
  list-style-type: none;
  display: flex;
  justify-content: flex-end;
+ align-items: flex-start;
  padding: 10px 0;
 }
 /* Space between top-level navigation items */
@@ -113,24 +115,23 @@ nav > ul > li:first-child{
  margin-right: auto;
 }
 
-/* Desktop dropdown under Membership. */
+/* Desktop dropdown under Membership, kept inside the nav bar. */
 .top-nav .nav-dropdown {
  position: relative;
- padding-bottom: 6px;
- margin-bottom: -6px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 .top-nav .dropdown-menu {
  list-style: none;
- position: absolute;
- top: 100%;
- left: 0;
- min-width: 190px;
- padding: 8px 0;
+ position: static;
+ min-width: 150px;
+ padding: 4px 0 0;
  margin: 0;
  display: none;
- background: #fff;
- border: 1px solid #ddd;
- box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+ background: transparent;
+ border: 0;
+ box-shadow: none;
  z-index: 1200;
 }
 .top-nav .dropdown-menu li {
@@ -138,8 +139,9 @@ nav > ul > li:first-child{
 }
 .top-nav .dropdown-menu a {
  display: block;
- padding: 8px 14px;
+ padding: 4px 8px;
  white-space: nowrap;
+ font-size: 14px;
 }
 .top-nav .nav-dropdown:hover .dropdown-menu,
 .top-nav .nav-dropdown:focus-within .dropdown-menu {
@@ -308,6 +310,22 @@ nav.no-script-nav ul {
 }
 nav.no-script-nav li {
  margin-right: 0;
+}
+nav.no-script-nav .no-script-dropdown {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+}
+nav.no-script-nav .no-script-submenu {
+ display: inline-flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ margin: 0;
+ padding: 0 0 0 10px;
+ border-left: 1px solid #d9d9d9;
+}
+nav.no-script-nav .no-script-submenu li {
+ display: block;
 }
 nav.no-script-nav a {
  color: #003087;

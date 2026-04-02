@@ -55,7 +55,8 @@ Below are common edits you can do yourself. Always **save a backup** before larg
 - Refresh the browser to see the update.
 
 ### B) Change or add links in the top menu
-- The navigation menu is defined in one place: **site.js**. Open `site.js` and look for the two lists labelled `sidebar` (mobile) and `top-nav` (desktop). Some menu items have dropdown submenus (e.g., "Membership" contains "Resources" as a child link). Each menu item looks like: `'    <li><a href="meetings.html">Meetings</a></li>',`
+- The navigation menu is defined in one place: **site.js**. Open `site.js` and look for the two lists labelled `sidebar` (mobile) and `top-nav` (desktop). Some menu items have dropdown submenus (e.g., `Membership` contains `Resources` as a child link). Each menu item looks like: `'    <li><a href="meetings.html">Meetings</a></li>',`
+- Each HTML page also includes a small `<noscript>` fallback menu, so if JavaScript is unavailable visitors can still navigate and will still see `Resources` grouped under `Membership`.
 - To rename a label, change the text between `>` and `</a>`.
 - To add a **new page** (e.g., `events.html`), copy an existing line in **both** menu lists and update the `href` and label text.
 - Add the new page to the **footer** quick-links section in `site.js` the same way.

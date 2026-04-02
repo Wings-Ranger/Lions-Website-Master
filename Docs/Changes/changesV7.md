@@ -5,7 +5,7 @@
 - Generated: 2026-04-01
 
 ## Summary
-Added a downloadable resources page, dropdown/submenu navigation, `<noscript>` fallback navigation across all pages, new membership content sections, and a second GitHub agent configuration.
+Added a downloadable resources page, dropdown/submenu navigation, `<noscript>` fallback navigation across all pages, new membership content sections, and a second GitHub agent configuration. The Membership > Resources navigation was then refined so the dropdown sits neatly inside the nav bar and the no-JS fallback mirrors that grouped structure.
 
 ---
 
@@ -35,6 +35,7 @@ Added a downloadable resources page, dropdown/submenu navigation, `<noscript>` f
 | # | Area / Description of Change | Why it is better |
 |---:|---|---|
 | 1 | **Added** `<noscript>` fallback navigation blocks to all 10 HTML pages. | Resolves the JavaScript-dependency issue flagged in `Problems/html.md` and `Problems/js.md`. Progressive enhancement ensures visitors can still navigate if JS fails to load. |
+| 2 | **Refined** the fallback nav markup so `Resources` remains grouped under `Membership` using a labelled submenu. | Keeps the no-JS experience aligned with the main site information architecture and makes the fallback easier to follow. |
 
 ---
 
@@ -62,7 +63,8 @@ Added a downloadable resources page, dropdown/submenu navigation, `<noscript>` f
 | 1 | **Added** dropdown menu styles (`.nav-dropdown`, `.dropdown-menu`, `.sidebar-submenu`) for nested navigation items. | Supports the new dropdown navigation pattern in both desktop and mobile views. |
 | 2 | **Added** `.resource-grid`, `.resource-card`, `.resource-meta`, `.resource-note` styles. | Provides card-based layout for the downloadable resources page. |
 | 3 | **Added** `.no-script-nav` styles for the `<noscript>` fallback navigation. | Ensures fallback navigation is styled consistently when JavaScript is unavailable. |
-| 4 | **Added** `.timeline` and `.timeline-step` styles. | Supports the volunteer onboarding timeline on the membership page. |
+| 4 | **Refined** the desktop dropdown and no-JS fallback submenu spacing to keep `Resources` visually tucked under `Membership` within the nav box. | Improves hover reliability and makes the grouped navigation look more intentional. |
+| 5 | **Added** `.timeline` and `.timeline-step` styles. | Supports the volunteer onboarding timeline on the membership page. |
 
 ---
 
