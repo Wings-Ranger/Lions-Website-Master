@@ -11,7 +11,7 @@
     '    <li class="close-btn">',
     '      <button type="button" class="icon-button close-sidebar" aria-label="Close menu">\u2715</button>',
     '    </li>',
-    '    <li><img src="images/lions-initail.png" alt="Lions Initials" width="55" height="50" /></li>',
+    '    <li><img src="images/Lions-Initail-Blue.png" alt="Lions Initials" width="55" height="50" /></li>',
     '    <li><a href="Home.html">Home</a></li>',
     '    <li>',
     '      <a href="membership.html">Membership</a>',
