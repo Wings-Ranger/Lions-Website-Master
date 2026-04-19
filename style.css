@@ -736,38 +736,6 @@ tr:nth-child(odd) {
   background: var(--accent);
   color: #000 !important;
 }
-.newsletter-heading {
-  margin-top: 16px;
-}
-.newsletter-row {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 4px;
-}
-.newsletter-row input[type="email"] {
-  flex: 1;
-  min-width: 140px;
-  padding: 8px 12px;
-  border: 1px solid #555;
-  border-radius: 4px;
-  background: #2a2a2a;
-  color: #fff;
-  font-size: 0.9rem;
-  font-family: inherit;
-}
-.newsletter-row input[type="email"]::placeholder {
-  color: #888;
-}
-.newsletter-row .btn {
-  padding: 8px 16px;
-  font-size: 0.9rem;
-}
-.newsletter-msg {
-  margin-top: 8px;
-  font-size: 0.85rem;
-  color: var(--accent);
-}
 .footer-bottom {
   border-top: 1px solid #333;
   text-align: center;
@@ -851,8 +819,7 @@ tr:nth-child(odd) {
   .site-footer,
   .hero-cta,
   .events-section,
-  .map-embed,
-  .newsletter-form {
+  .map-embed {
     display: none !important;
   }
   body {

@@ -134,15 +134,6 @@
     '        <a href="#" class="social-link" aria-label="Harcourt Lions on Facebook">Facebook</a>',
     '        <a href="#" class="social-link" aria-label="Harcourt Lions on Instagram">Instagram</a>',
     '      </div>',
-    '      <h3 class="newsletter-heading">Newsletter</h3>',
-    '      <form class="newsletter-form" id="newsletter-form" novalidate>',
-    '        <label for="newsletter-email" class="sr-only">Your email address</label>',
-    '        <div class="newsletter-row">',
-    '          <input type="email" id="newsletter-email" name="email" placeholder="Your email address" required />',
-    '          <button type="submit" class="btn btn-primary">Subscribe</button>',
-    '        </div>',
-    '        <p class="newsletter-msg" id="newsletter-msg" aria-live="polite" hidden></p>',
-    '      </form>',
     '    </div>',
     '  </div>',
     '  <div class="footer-bottom">',
@@ -154,21 +145,6 @@
   var mainEl = document.querySelector('main');
   if (mainEl) {
     mainEl.insertAdjacentHTML('afterend', FOOTER_HTML);
-  }
-
-  // Newsletter subscribe handler
-  var newsletterForm = document.getElementById('newsletter-form');
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var emailInput = document.getElementById('newsletter-email');
-      var msg = document.getElementById('newsletter-msg');
-      if (emailInput && msg && emailInput.value) {
-        msg.textContent = 'Thanks! We\u2019ll be in touch.';
-        msg.hidden = false;
-        emailInput.value = '';
-      }
-    });
   }
 
   // ---------------------------------------------------------------------------
